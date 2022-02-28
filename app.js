@@ -17,7 +17,9 @@ function calcRomb() {
     if(isNaN(oldal) || isNaN(alfaszog)) {
         output.textContent = "Adjon meg két számot!";
     }else {
-        var sugar = (1/2) * oldal * Math.sin(alfaszog);
+        /*var sugar = oldal * ((Math.sin(alfaszog) / 2) / 2);*/
+        /*var sugar = (1 / 2) * (oldal * Math.sin(alfaszog));*/
+        var sugar = (0.5*oldal)*(Math.sin(alfaszog));
         output.textContent = sugar;
     }
 };
